@@ -16,10 +16,10 @@ $smsMessage = "My Test Message";
 
 curl_setopt_array($curl, array(
   CURLOPT_URL => "https://secure.smslink.ro/sms/gateway/communicate/index.php".
-"?connection_id=".$connectionId.
-"&password=".$password.
-"&to=".$smsTo.
-"&message=".urlencode($smsMessage),
+    "?connection_id=".$connectionId.
+    "&password=".$password.
+    "&to=".$smsTo.
+    "&message=".urlencode($smsMessage),
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HEADER => false,
