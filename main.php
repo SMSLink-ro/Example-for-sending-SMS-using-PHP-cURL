@@ -14,6 +14,13 @@ $password = "... My SMS Gateway Password ...";
 $smsTo = "07xyzzzzzz";
 $smsMessage = "My Test Message";
 
+/*
+
+  HTTPS API Endpoint:  https://secure.smslink.ro/sms/gateway/communicate/index.php
+  HTTP API Endpoint:   http://www.smslink.ro/sms/gateway/communicate/index.php
+
+*/
+
 curl_setopt_array($curl, array(
   CURLOPT_URL => "https://secure.smslink.ro/sms/gateway/communicate/index.php".
     "?connection_id=".$connectionId.
